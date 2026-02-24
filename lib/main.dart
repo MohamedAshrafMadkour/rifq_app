@@ -84,7 +84,7 @@ Future<void> main() async {
           ),
           BlocProvider(create: (_) => getIt.get<ReciterDownloadingCubit>()),
         ],
-        // child: DevicePreview(builder: (context) => const SakinaApp()),
+        //    child: DevicePreview(builder: (context) => const SakinaApp()),
         child: SakinaApp(),
       ),
     );

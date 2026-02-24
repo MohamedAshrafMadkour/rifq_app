@@ -34,16 +34,23 @@ class CategoryItem extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      categoryModel.title,
-                      style: AppStyles.textMedium18(context),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        categoryModel.title,
+                        style: AppStyles.textMedium18(context).copyWith(
+                          color: Colors.white,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
                     const SizedBox(height: 4),
                     Text(
                       ' ${categoryModel.subTitle.toStringAsFixed(0)}',
-                      style: AppStyles.textRegular14(context),
+                      style: AppStyles.textRegular14(context).copyWith(
+                        color: Colors.white,
+                      ),
                     ),
                   ],
                 ),

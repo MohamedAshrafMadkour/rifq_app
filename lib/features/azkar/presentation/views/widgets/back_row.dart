@@ -18,7 +18,7 @@ class BackRow extends StatelessWidget {
             },
             child: Icon(
               Icons.arrow_back,
-              color: Color(0xff6B6B6B),
+
               size: 16,
             ),
           ),

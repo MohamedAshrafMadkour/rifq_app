@@ -30,14 +30,18 @@ class AppbarHeader extends StatelessWidget {
           children: [
             Text(
               'الادعية و الأذكار',
-              style: AppStyles.textMedium24(context),
+              style: AppStyles.textMedium24(context).copyWith(
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 8,
             ),
             Text(
               'حصن المسلم اليومي',
-              style: AppStyles.textRegular14(context),
+              style: AppStyles.textRegular14(context).copyWith(
+                color: Colors.white,
+              ),
             ),
           ],
         ),

@@ -30,7 +30,7 @@ class SakinaApp extends StatelessWidget {
               theme: lightTheme(),
               darkTheme: darkTheme(),
               themeMode: themeState,
-              initialRoute: AppRoutes.reminderView,
+              initialRoute: AppRoutes.homeView,
             );
           },
         );

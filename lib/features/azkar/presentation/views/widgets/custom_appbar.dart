@@ -10,7 +10,7 @@ class CustomAppbar extends StatelessWidget {
   CustomAppbar({super.key, this.sizedBox = true});
   final bool sizedBox;
   final List<CounterModel> items = [
-    CounterModel(count: 6, title: 'الفئات'),
+    CounterModel(count: 11, title: 'الفئات'),
     CounterModel(count: 0, title: 'مكتملة اليوم'),
     CounterModel(count: 0, title: 'المفضله'),
   ];

@@ -17,16 +17,27 @@ class CounterWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            '${counterModel.count}',
-            style: AppStyles.textRegular24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              '${counterModel.count}',
+              style: AppStyles.textRegular24(context).copyWith(
+                color: Colors.white,
+              ),
+            ),
           ),
           SizedBox(
             height: 4,
           ),
-          Text(
-            counterModel.title,
-            style: AppStyles.textRegular12(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              counterModel.title,
+              style: AppStyles.textRegular12(context).copyWith(
+                color: Colors.white,
+              ),
+            ),
           ),
         ],
       ),

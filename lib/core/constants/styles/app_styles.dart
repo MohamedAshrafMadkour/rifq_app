@@ -37,7 +37,6 @@ abstract class AppStyles {
       fontSize: getResponsiveFontSize(context, fontSize: 14),
       fontWeight: FontWeight.w500,
       height: 1.43,
-      color: const Color(0xFF1A1A1A),
     );
   }
 
@@ -116,8 +115,8 @@ abstract class AppStyles {
       height: 1.50,
       color: getColor(
         context,
-        light: LightAppColors.greyColor6B,
-        dark: DarkAppColors.textSecondary,
+        light: Colors.black,
+        dark: Colors.white,
       ),
     );
   }

@@ -19,12 +19,10 @@ class ZekrItemBottom extends StatelessWidget {
             spacing: 8,
             children: [
               CustomTypeContainer(
-                backgroundColor: Color(0xFFD4AF37),
                 title: type1,
               ),
 
               CustomTypeContainer(
-                backgroundColor: Colors.white,
                 title: type2,
                 borderColor: Color(0x1E0D7E5E),
               ),
@@ -38,13 +36,11 @@ class ZekrItemBottom extends StatelessWidget {
 
 class CustomTypeContainer extends StatelessWidget {
   const CustomTypeContainer({
-    required this.backgroundColor,
     required this.title,
     this.borderColor,
     super.key,
   });
   final String title;
-  final Color backgroundColor;
   final Color? borderColor;
   @override
   Widget build(BuildContext context) {
@@ -54,9 +50,8 @@ class CustomTypeContainer extends StatelessWidget {
 
       clipBehavior: Clip.antiAlias,
       decoration: ShapeDecoration(
-        color: isDark
-            ? DarkAppColors.primaryLight
-            : LightAppColors.primaryColor,
+        color: isDark ? DarkAppColors.accentSoft : LightAppColors.blackColor190,
+
         shape: RoundedRectangleBorder(
           side: BorderSide(
             color: isDark
